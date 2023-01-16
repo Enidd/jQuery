@@ -147,7 +147,14 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-
+    $('#Now').click(function(){
+      //$(this).css('backgroundColor', 'pink');
+      // 這裡的this，指得是當事者$('#Now')
+      //$(this).next().css('backgroundColor', 'pink');
+      // $(this).nextAll().css('backgroundColor', 'pink');
+      // $(this).siblings().css('backgroundColor', 'pink');
+      $(this).siblings().first().css('backgroundColor', 'pink');
+    });
   </script>
 </body>
 
